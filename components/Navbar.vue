@@ -1,11 +1,13 @@
 <template>
   <nav>
     <div class="nav-banner">{{ banner }}</div>
-    <div
-      v-for="(value, index) in items"
-      :key="index"
-      class="nav-item">
-      {{ value }}
+    <div class="nav-items">
+      <div
+        v-for="(value, index) in items"
+        :key="index"
+        class="nav-item">
+        {{ value }}
+      </div>
     </div>
   </nav>
 </template>
@@ -28,18 +30,20 @@ export default {
 <style scoped>
 .nav-banner {
   font-size: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
+}
+.nav-items {
+  display: inline-flex;
+  justify-content: space-evenly;
+  width: 30vw;
 }
 .nav-item {
   font-size: 18px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #f7c854;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 15px 20px;
 }
 </style>
