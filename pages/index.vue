@@ -1,6 +1,7 @@
 <template>
   <div>
     <Navbar/>
+    <Banner/>
     <BlogCard/>
   </div>
 </template>
@@ -8,10 +9,12 @@
 <script>
 import BlogCard from '@/components/Blog-card'
 import Navbar from '@/components/Navbar'
+import Banner from '@/components/banner'
 export default {
   components: {
     BlogCard,
-    Navbar
+    Navbar,
+    Banner
   }
 }
 </script>

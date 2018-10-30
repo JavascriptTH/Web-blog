@@ -14,7 +14,7 @@ export default {
   props: {
     items: {
       default: function() {
-        return ['บทความส์ สั้น!!', 'บทความส์ ยาว', 'วิดีโอส์']
+        return ['บทความส์ สั้น!!', 'บทความส์ ยาว!!', 'วิดีโอส์']
       },
       type: Array
     },
@@ -35,6 +35,8 @@ export default {
   font-size: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 nav {
   display: flex;
