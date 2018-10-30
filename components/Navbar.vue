@@ -36,10 +36,10 @@ export default {
   font-size: 18px;
   font-weight: 500;
   display: inline-flex;
-  justify-content: space-evenly;
-  width: 30vw;
 }
-
+.nav-item {
+  margin: 0 15px;
+}
 nav {
   display: flex;
   justify-content: space-between;
