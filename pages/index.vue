@@ -40,8 +40,6 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Prompt:400,500');
-
 html {
   font-family: 'Prompt', sans-serif;
 }

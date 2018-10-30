@@ -62,7 +62,7 @@ export default {
   margin-left: 20px;
   margin-right: 20px;
 }
-.more > button {
+button {
   float: right;
   background-color: #f7c854;
   border-color: #f7c854;
@@ -76,7 +76,7 @@ export default {
 }
 
 @media only screen and (max-width: 576px) {
-  .more > button {
+  button {
     margin: auto;
   }
 }
