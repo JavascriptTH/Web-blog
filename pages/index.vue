@@ -2,7 +2,12 @@
   <div>
     <Navbar/>
     <Banner/>
-    <BlogCard/>
+    <ListCard
+      title="วิดีโอล่าสุด"
+      icon="https://svgshare.com/i/97h.svg"/>
+    <ListCard
+      title="บทความล่าสุด"
+      icon="https://svgshare.com/i/97r.svg"/>
   </div>
 </template>
 
@@ -10,11 +15,26 @@
 import BlogCard from '@/components/Blog-card'
 import Navbar from '@/components/Navbar'
 import Banner from '@/components/banner'
+import ListCard from '@/components/list-card'
 export default {
   components: {
     BlogCard,
     Navbar,
-    Banner
+    Banner,
+    ListCard
+  },
+  head() {
+    return {
+      title: 'กระโปก JS',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'กระโปก JS เป็นเว็บที่สอนเขียน JS แบบ ๐l๐'
+        }
+      ]
+    }
   }
 }
 </script>
@@ -25,16 +45,8 @@ export default {
 html {
   font-family: 'Prompt', sans-serif;
 }
-
-.container {
-  display: flex;
-}
-
-.title {
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+button:focus,
+input {
+  outline: none;
 }
 </style>
