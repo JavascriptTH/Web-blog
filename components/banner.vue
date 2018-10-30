@@ -1,7 +1,7 @@
 <template>
   <div class="banner">
     <img :src="image">
-    <div class="center">{{ title }}</div>
+    <div class="center"><h2>{{ title }}</h2></div>
   </div>
 </template>
 <script>
@@ -32,6 +32,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 50px;
+  font-weight: 500;
 }
 .banner {
   width: 100vw;
