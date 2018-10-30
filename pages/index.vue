@@ -1,44 +1,24 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        javascript-th
-      </h1>
-      <h2 class="subtitle">
-        กระโปก JS
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+  <div>
+    <Navbar/>
+    <BlogCard/>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
+import BlogCard from '@/components/Blog-card'
+import Navbar from '@/components/Navbar'
 export default {
   components: {
-    Logo
+    BlogCard,
+    Navbar
   }
 }
 </script>
 
 <style>
 .container {
-  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .title {
@@ -49,17 +29,5 @@ export default {
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>
